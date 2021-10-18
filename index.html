@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>forms</title>
+    <link rel="stylesheet" href="style.css" >
+</head>
+<body>
+<div class="container">
+  <form class="main_form" action="">
+    <fieldset class="info">
+      <legend>
+        Personal information
+      </legend>
+        <div class="wrapper">
+          <label>
+            Surname:
+              <input type="text" autocomplete="off" minlength="2" maxlength="25"  name="surname" required>
+          </label>
+        </div>
+        <div class="wrapper">
+          <label>
+            Name:
+              <input type="text" autocomplete="off" name="name"  required>
+          </label>
+        </div>
+        <div class="wrapper">
+          <label>
+            How old are you?
+              <input type="number" name="age" value="12" required>
+          </label>
+        </div>
+
+        <div class="wrapper">
+          <label>
+            Full date of birth:
+              <input type="date" name="birthday" required>
+          </label>
+        </div>
+
+        <div class="wrapper">
+          <label>
+            I accept the term of the agreement
+              <input type="checkbox" name="accept" >
+          </label>
+        </div>
+    </fieldset>
+
+    <fieldset class="registration">
+      <legend>
+         Registration
+      </legend>
+        <div class="wrapper">
+          <label>
+            Email:
+              <input type="email" name="email-address" minlength="4" maxlength="40" placeholder="email@example.com" required>
+          </label>
+        </div>
+
+        <div class="wrapper">
+          <label>
+            Password:
+              <input type="text" autocomplete="off" minlength="4" name="password" required>
+          </label>
+        </div>
+    </fieldset>
+
+    <fieldset class="fact_about_you">
+      <legend>
+        An interesting fact about you!
+      </legend>
+        <div class="wrapper">
+          <label>
+            Do you love cats?
+              <input type="radio" name="choice" value="Yes" > Yes
+          </label>
+          <label>
+            <input type="radio" name="choice" value="No"> No
+          </label>
+        </div>
+
+        <div class="wrapper">
+          <label>
+            What is your favorite color?
+              <input type="color" name="color" value="color" >
+          </label>
+        </div>
+
+        <div class="wrapper">
+          <label>
+            What time do you go to bed?
+              <input type="time" name="time" value="time" >
+          </label>
+        </div>
+
+        <div class="wrapper">
+          <label>
+             What are your favorite  brand of cars?
+               <select multiple name="cars">
+                 <option>BMW</option>
+                 <option>Audi</option>
+                 <option>Lada</option>
+               </select> >
+          </label>
+        </div>
+
+        <div class="wrapper">
+          <label>
+            How do you rate our work?
+              <input type="range" name="rate" min="0" max="100" step="1" value="0" >
+          </label>
+        </div>
+    </fieldset>
+
+    <fieldset class="addition_info">
+      <legend>
+        Addition info:
+      </legend>
+        <div class="wrapper">
+          <label>
+            Comments:
+              <textarea name="comment"></textarea>
+          </label>
+        </div>
+
+        <div class="wrapper">
+          <label>
+            Would you recommend us?
+              <select name="recommend">
+                <option>Yes</option>
+                <option>No</option>
+              </select>
+          </label>
+        </div>
+    </fieldset>
+
+    <button class="btn" name="submit" onsubmit="onsubmit()">
+      Submit
+    </button>
+    </form>
+</div>
+
+</body>
+</html>
